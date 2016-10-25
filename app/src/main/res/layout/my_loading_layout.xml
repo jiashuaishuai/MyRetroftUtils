@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="120dp">
+
+    <LinearLayout
+        android:id="@+id/my_dialogBg"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.example.administrator.myretroftutils.MyView.circular_progress_view.CircularProgressView
+            android:id="@+id/dialog_progress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="正在加载..."
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</RelativeLayout>
